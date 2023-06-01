@@ -78,7 +78,7 @@ header {
 }
 
 .navegation .btnLogin-popup:hover {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     color: black;
 }
 
@@ -87,10 +87,10 @@ header {
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid rgb(252, 252, 252);
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.445);
+    box-shadow: 0 0 30px rgba(92, 91, 91, 0.445);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@ header {
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938fd;
+    color: #000000fd;
     text-align: center;
 }
 
@@ -153,7 +153,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #324a64;
+    color: #fefeff;
     font-weight: 600;
     padding: 0 35px  0 5px;
 }
