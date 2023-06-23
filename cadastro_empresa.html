@@ -1,102 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/cadastrp_empresa.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index_2.css">
+        <link rel="stylesheet" href="css/cadastrp_empresa.css">
+        <link rel="stylesheet" href="css/empresa2.css">
+        <link rel="stylesheet" href="css/empresa3.css">
+    </head>
+  <body>
   
     <header>
         <nav>
-        <a class="logo" href="/">Shopize company</a>
+          <img src="css/Integrador projeto.png" alt="logo" width="71px" height="59px">
+        <a class="logo" href="/">Betelgeuse company</a>
         <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a href="login.html">Início</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="#">Cadastro Empresa</a></li>
+            <li><a href="cadastro_empresa.html">Empresa</a></li>
         </ul>
         </nav>
     </header>
     <main></main>
 
-
-        <div class="box">
-            <div class="img-box">
-                <img src="./imagens/man-593333_640.png">
-            </div>
-            <div class="form-box">
-                <h2>Criar Conta</h2>
-                <p> Já é um membro? <a href="#"> Login </a> </p>
-                <form action="#">
-                    <div class="input-group">
-                        <label for="nome"> Nome da empresa</label>
-                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="nome"> Settor de atividade</label>
-                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <label for="nome"> Endereço</label>
-                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
-                    </div>
-    
-    
-                    <div class="input-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Digite o seu email" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
-                    </div>
-    
-                    <div class="input-group w50">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Digite sua senha" required>
-                    </div>
-    
-                    <div class="input-group w50">
-                        <label for="Confirmarsenha">Confirmar Senha</label>
-                        <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <button>Cadastrar</button>
-                    </div>
-    
-                </form>
-            </div>
+    <div class="container">
+        <div class="header">
+          <h2>Criar a conta de sua Empresa</h2>
         </div>
 
+        <form id="form" class="form">
+          <div class="form-control">
+            <label for="username">Nome da empresa</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Digite seu nome de usuário..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
 
-        <footer>
-            <div class="footer-content">
-                <h3>code opacity</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
-                <ul class="socials">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>copyright &copy;2020 todos os direitos reservados. Criado por <span>Lucas rogério</span></p>
-            </div>
-        </footer>
+          <div class="form-control">
+            <label for="email">Email da empresa</label>
+            <input type="text" id="email" placeholder="Digite seu email.." />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
 
-</body>
+          <div class="form-control">
+            <label for="text">Atividade econômica/profissão</label>
+            <input
+              type="text"
+              placeholder="Atividade econômica/profissão..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+          <div class="form-control">
+            <label for="text">Endereço da empresa</label>
+            <input
+              type="text"
+              placeholder="Endereço da empresa..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+          <div class="form-control">
+            <label for="text">CNPJ/CPF</label>
+            <input
+              type="number"
+              placeholder="CNPJ/CPF..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+    
+          <div class="form-control">
+            <label for="password-confirmation">Fundação</label>
+            <input
+              type="text"
+              placeholder="Data da Fundação..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div> 
+            <div class="form-control">
+              <label for="username">Senha</label>
+              <input
+                type="text"
+                placeholder="Digite seu nome de usuário..."
+              />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Confirmar Senha</label>
+                <input
+                  type="text"
+                  placeholder="Digite seu nome de usuário..."
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+              </div>     
+        <form id="form" class="form">
+      </div><br>
+      <div class="btn_1">
+        <a href="#">Cadastre-se</a>
+      </div><br><br><br><br>
+      
+    
+
+      <footer>
+          <div class="footer-content">
+              <h3>Betelgeuse company</h3>
+              <p>Seja bem vindo !</p>
+              <ul class="socials">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>copyright &copy;2023 todos os direitos reservados. Criado por <span>Lucas rogério</span></p>
+          </div>
+      </footer>
+
+      <script src="js/mobile-navbar.js"></script>
+      <script src="js/cadastro.js"></script>
+  </body>
 </html>

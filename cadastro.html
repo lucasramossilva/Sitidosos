@@ -4,77 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/cadrastro.css">
+    <link rel="stylesheet" href="css/cadastro2.css">
+    <link rel="stylesheet" href="css/cadastro3.css">
 </head>
 <body>
     
 
     <header>
         <nav>
-        <a class="logo" href="/">Shopize company</a>
+          <img src="css/Integrador projeto.png" alt="logo" width="71px" height="59px">
+        <a class="logo" href="/">Betelgeuse company</a>
         <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a href="login.html">Início</a></li>
-            <li><a href="#">Sobre</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="cadastro_empresa.html">Cadastro Empresa</a></li>
+            <li><a href="cadastro_empresa.html">Empresa</a></li>
         </ul>
         </nav>
     </header>
     <main></main>
 
 
-        <div class="box">
-            <div class="img-box">
-                <img src="./imagens/img-formulario.png">
-            </div>
-            <div class="form-box">
-                <h2>Criar Conta</h2>
-                <p> Já é um membro? <a href="#"> Login </a> </p>
-                <form action="#">
-                    <div class="input-group">
-                        <label for="nome"> Nome Completo</label>
-                        <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="Digite o seu email" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" placeholder="Digite o seu telefone" required>
-                    </div>
-    
-                    <div class="input-group w50">
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Digite sua senha" required>
-                    </div>
-    
-                    <div class="input-group w50">
-                        <label for="Confirmarsenha">Confirmar Senha</label>
-                        <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required>
-                    </div>
-    
-                    <div class="input-group">
-                        <button>Cadastrar</button>
-                    </div>
-    
-                </form>
-            </div>
+
+    <div class="container">
+      <div class="header">
+        <h2>Criar Uma Conta</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
         </div>
 
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
 
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password-confirmation">Confirmação de senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        
+      </form>
+    </div>
+    <div class="btn3">
+     <button class="btn4" type="submit"><a href="vagas1.html">Cadastra</a> </button>
+    </div>
         <footer>
             <div class="footer-content">
-                <h3>code opacity</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+                <h3>Betelgeuse company</h3>
+                <p>Seja bem vindo !</p>
                 <ul class="socials">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -84,9 +103,15 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                <p>copyright &copy;2020 todos os direitos reservados. Criado por <span>Lucas rogério</span></p>
+                <p>copyright &copy;2023 todos os direitos reservados. Criado por <span>Lucas rogério</span></p>
             </div>
         </footer>
+
+        <script src="js/mobile-navbar.js"></script>
+        <script src="js/cadastro.js"></script>
+
+
+
 
 </body>
 </html>
