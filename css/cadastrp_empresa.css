@@ -1,0 +1,94 @@
+*{
+  font-size: 22px;
+}
+
+body{
+  background: rgb(224, 224, 224);
+}
+.container {
+  z-index: -1;
+  font-size: 22px;
+  border: 1px solid;
+  border-color: #000000;
+  position: relative;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  top: 22px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.log{
+  top: 22px;
+  position: relative;
+  left: 22px;
+}
+.btn2{
+  top: -22px;
+  left: 22px;
+  position: relative;
+  text-decoration: underline;
+  color: #0194f7;
+  
+}
+
+.header {
+  background-color: #eee;
+  padding: 29px 22px;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: px;
+  position: relative;
+}
+
+.form-control1 {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+
+.form-control label {
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.btn_1 {  
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  background-color: #3cff00;
+  border: 2px solid #ffffff;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
